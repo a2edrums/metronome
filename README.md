@@ -1,4 +1,126 @@
-# Getting Started with Create React App
+# 🎵 Metronome
+
+A fully-featured metronome web application built with React. Perfect for musicians, music students, and anyone needing precise timing practice.
+
+## ✨ Features
+
+- **Adjustable BPM**: 30-300 beats per minute with precise control
+- **Multiple Time Signatures**: 2/4, 3/4, 4/4, 5/4, 6/8, 7/8 support
+- **Visual Beat Indicators**: Clear visual feedback with accent highlighting
+- **Four Sound Types**: Classic, Wood Block, Beep, and Tick sounds
+- **Tap Tempo**: Calculate BPM by tapping rhythm
+- **Volume Control**: Adjustable click volume
+- **Tempo Presets**: Classical tempo markings (Largo, Allegro, etc.)
+- **Keyboard Shortcuts**: Spacebar for play/pause
+- **100% Offline**: No internet required, works completely offline
+- **Settings Persistence**: Remembers your preferences
+- **Dark Theme**: Easy on the eyes for extended practice sessions
+- **Responsive Design**: Works on desktop, tablet, and mobile
+
+## 🚀 Quick Start
+
+### Installation
+```bash
+npm install
+```
+
+### Development
+```bash
+npm start
+```
+Open [http://localhost:3000](http://localhost:3000) to view in browser.
+
+### Build for Production
+```bash
+npm run build
+```
+
+## 🎹 Usage
+
+### Basic Controls
+- **Play/Pause**: Click the play button or press spacebar
+- **Stop**: Click stop to reset to beginning
+- **BPM Adjustment**: Use +/- buttons or type directly
+- **Tap Tempo**: Tap the "Tap Tempo" button to set BPM by rhythm
+
+### Settings
+- **Time Signature**: Choose from common time signatures
+- **Sound Type**: Select between Classic, Wood Block, Beep, or Tick
+- **Volume**: Adjust click volume with slider
+
+### Tempo Presets
+Quickly set common classical tempos:
+- Largo (60 BPM)
+- Adagio (76 BPM) 
+- Andante (108 BPM)
+- Moderato (120 BPM)
+- Allegro (144 BPM)
+- Presto (180 BPM)
+
+## 🔧 Technical Details
+
+### Built With
+- **React 19** - UI framework
+- **React Bootstrap** - UI components with dark theme
+- **React Icons** - Professional icons
+- **Web Audio API** - High-quality audio generation
+- **Local Storage** - Settings persistence
+
+### Audio Implementation
+- Uses Web Audio API for precise timing and audio generation
+- No external audio files required
+- Four distinct sound types with different waveforms and characteristics
+- Accent beats use different frequencies for clear downbeat indication
+
+### Offline Capability
+- Fully functional without internet connection
+- All audio generated in-browser
+- Settings stored locally
+- Perfect for practice rooms without WiFi
+
+## 📱 Browser Support
+
+Works in all modern browsers that support:
+- Web Audio API
+- ES6+ JavaScript
+- CSS Grid/Flexbox
+
+## 🎯 Perfect For
+
+- **Musicians**: Practice with steady tempo
+- **Music Students**: Develop timing and rhythm skills
+- **Teachers**: Classroom instruction tool
+- **Composers**: Reference for tempo markings
+- **Dancers**: Choreography and practice
+- **Anyone**: Needing precise timing for any activity
+
+## 🔄 Development
+
+### Available Scripts
+
+- `npm start` - Development server
+- `npm test` - Run tests
+- `npm run build` - Production build
+- `npm run eject` - Eject from Create React App
+
+### Project Structure
+```
+src/
+├── components/          # React components
+│   ├── MetronomeDisplay.js
+│   ├── Controls.js
+│   ├── Settings.js
+│   └── TempoPresets.js
+├── hooks/              # Custom React hooks
+│   └── useMetronome.js
+├── utils/              # Utility functions
+│   └── audioUtils.js
+└── App.js              # Main application
+```
+
+## 📄 License
+
+This project is open source and available under the MIT License.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
